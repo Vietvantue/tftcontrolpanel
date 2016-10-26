@@ -2,9 +2,113 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:clickable="true"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="@dimen/_8sdp"
+            android:text="Passcode"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_background_timer_btn"
+            android:gravity="center"
+            android:text="OFF"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="@dimen/_8sdp"
+            android:text="Passcode"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_background_timer_btn"
+            android:gravity="center"
+            android:text="OFF"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_weight="2" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/left_button" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text=""
+            android:textAllCaps="true"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1/3"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,162 +145,10 @@
             android:layout_weight="2"
             android:background="@drawable/drawable_background_timer_btn"
             android:gravity="center"
-            android:text="Set"
+            android:text="Address"
             android:textColor="@android:color/white"
             android:textSize="@dimen/_16sdp"
             android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:weightSum="7">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:lines="2"
-            android:padding="@dimen/_8sdp"
-            android:text="Bluetooth"
-            android:textSize="@dimen/_16sdp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/drawable_background_timer_btn"
-            android:gravity="center"
-            android:text="OFF"
-            android:textColor="@android:color/white"
-            android:textAllCaps="true"
-            android:textSize="@dimen/_16sdp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/_8sdp"
-            android:layout_weight="2"
-            android:background="@drawable/drawable_background_timer_btn"
-            android:gravity="center"
-            android:textColor="@android:color/white"
-            android:text="Pair"
-            android:textSize="@dimen/_16sdp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/left_button" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="7">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:text=""
-            android:textSize="@dimen/_16sdp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="channel"
-            android:textAllCaps="true"
-            android:textSize="@dimen/_14sdp" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="1/3"
-            android:textAllCaps="true"
-            android:textSize="@dimen/_14sdp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:weightSum="7">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:padding="@dimen/_8sdp"
-            android:text="Aria DMX\nWireless"
-            android:textSize="@dimen/_16sdp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/drawable_background_timer_btn"
-            android:gravity="center"
-            android:text="OFF"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/_16sdp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:padding="@dimen/_8sdp"
-                android:src="@drawable/left_brace_icon" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="00"
-                android:textSize="@dimen/_18sdp" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:padding="@dimen/_8sdp"
-                android:src="@drawable/right_brace_icon" />
-        </LinearLayout>
 
         <View
             android:layout_width="0dp"
@@ -214,6 +166,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:weightSum="7">
 
         <TextView
@@ -221,33 +174,42 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
+            android:lines="2"
             android:padding="@dimen/_8sdp"
-            android:text="Contact\nTriggers"
+            android:text="Passcode"
             android:textSize="@dimen/_16sdp" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/drawable_background_timer_btn"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
             android:gravity="center"
-            android:text="OFF"
-            android:textColor="@android:color/white"
-            android:textAllCaps="true"
-            android:textSize="@dimen/_16sdp"
-            android:textStyle="bold" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/_8sdp"
-            android:layout_weight="2"
-            android:background="@drawable/drawable_background_timer_btn"
-            android:gravity="center"
-            android:textColor="@android:color/white"
-            android:text="Assign"
-            android:textSize="@dimen/_16sdp"
-            android:textStyle="bold" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/left_brace_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Not Implemented"
+                android:textSize="@dimen/_18sdp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/right_brace_icon" />
+        </LinearLayout>
 
     </LinearLayout>
 
