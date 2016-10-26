@@ -12,4 +12,5 @@
     <string name="string_select_channel_count">Please select the number of channels your fixure has</string>
     <string name="string_select_group_individual">Please select how you would like to use your fixtures</string>
     <string name="string_select_preset_apply">Please select the preset you would like to apply</string>
+    <string name="string_adjust_fade_title">Adjust the fade time and speed for this preset</string>
 </resources>
