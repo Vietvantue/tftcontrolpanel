@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TFT Control Panel</string>
+    <string name="title_activity_set_up">SetUpActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_select_channel_color">Please select the colors to represent each channel</string>
+    <string name="string_select_date_time">Please set the date and time</string>
+    <string name="string_select_light_other">Please explain what each channel is used for</string>
+    <string name="string_select_channel_count">Please select the number of channels your fixure has</string>
+    <string name="string_select_group_individual">Please select how you would like to use your fixtures</string>
+    <string name="string_select_preset_apply">Please select the preset you would like to apply</string>
+</resources>
