@@ -2,9 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:clickable="true"
     android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical"
     tools:context="com.offspring.tftcontrolpanel.fragment.PresetFragment">
 
     <TextView
@@ -20,145 +20,162 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginLeft="@dimen/_15sdp"
-        android:layout_marginRight="@dimen/_15sdp">
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="horizontal">
+
         <TextView
             android:id="@+id/tv_preset_1"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="ALL OFF"
-            android:gravity="center"
+            android:layout_weight="2"
             android:background="@drawable/drawable_preset_btn_bg"
-            android:textSize="@dimen/_16sdp"
-            android:padding="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="ALL OFF"
+            android:textSize="@dimen/_16sdp" />
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="match_parent"
+            android:layout_weight="0.5"
             android:adjustViewBounds="true"
-            android:src="@drawable/left_button"/>
+            android:src="@drawable/left_button" />
+
         <TextView
             android:id="@+id/tv_preset_2"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="ALL OFF"
-            android:gravity="center"
+            android:layout_weight="2"
             android:background="@drawable/drawable_preset_btn_bg"
-            android:textSize="@dimen/_16sdp"
-            android:padding="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="ALL OFF"
+            android:textSize="@dimen/_16sdp" />
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_13sdp"
         android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
         android:text="1/10"
-        android:gravity="center"/>
+        android:textSize="@dimen/_13sdp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_15sdp"
-        android:layout_marginRight="@dimen/_15sdp">
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
         <TextView
             android:id="@+id/tv_preset_3"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="ALL OFF"
-            android:gravity="center"
+            android:layout_weight="2"
             android:background="@drawable/drawable_preset_btn_bg"
-            android:textSize="@dimen/_16sdp"
-            android:padding="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="ALL OFF"
+            android:textSize="@dimen/_16sdp" />
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="match_parent"
+            android:layout_weight="0.5"
             android:adjustViewBounds="true"
-            android:src="@drawable/right_button"/>
+            android:src="@drawable/right_button" />
+
         <TextView
             android:id="@+id/tv_preset_4"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="ALL OFF"
-            android:gravity="center"
+            android:layout_weight="2"
             android:background="@drawable/drawable_preset_btn_bg"
-            android:textSize="@dimen/_16sdp"
-            android:padding="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="ALL OFF"
+            android:textSize="@dimen/_16sdp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_15sdp"
-        android:layout_marginRight="@dimen/_15sdp">
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
         <TextView
             android:id="@+id/tv_preset_5"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="ALL OFF"
-            android:gravity="center"
+            android:layout_weight="2"
             android:background="@drawable/drawable_preset_btn_bg"
-            android:textSize="@dimen/_16sdp"
-            android:padding="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="ALL OFF"
+            android:textSize="@dimen/_16sdp" />
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="match_parent"
+            android:layout_weight="0.5"
             android:adjustViewBounds="true"
-            android:src="@drawable/create_preset"/>
+            android:src="@drawable/create_preset"
+            android:visibility="invisible" />
+
         <TextView
             android:id="@+id/tv_preset_6"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="ALL OFF"
-            android:gravity="center"
+            android:layout_weight="2"
             android:background="@drawable/drawable_preset_btn_bg"
-            android:textSize="@dimen/_16sdp"
-            android:padding="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="ALL OFF"
+            android:textSize="@dimen/_16sdp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_15sdp"
-        android:layout_marginRight="@dimen/_15sdp">
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
         <TextView
             android:id="@+id/tv_preset_7"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="ALL OFF"
-            android:gravity="center"
+            android:layout_weight="2"
             android:background="@drawable/drawable_preset_btn_bg"
-            android:textSize="@dimen/_16sdp"
-            android:padding="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="ALL OFF"
+            android:textSize="@dimen/_16sdp" />
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="match_parent"
+            android:layout_weight="0.5"
             android:adjustViewBounds="true"
-            android:src="@drawable/delete_preset"/>
+            android:src="@drawable/delete_preset"
+            android:visibility="invisible" />
+
         <TextView
             android:id="@+id/tv_preset_8"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="ALL OFF"
-            android:gravity="center"
+            android:layout_weight="2"
             android:background="@drawable/drawable_preset_btn_bg"
-            android:textSize="@dimen/_16sdp"
-            android:padding="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="ALL OFF"
+            android:textSize="@dimen/_16sdp" />
     </LinearLayout>
 
 </LinearLayout>

@@ -12,9 +12,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.offspring.tftcontrolpanel.R;
+import com.offspring.tftcontrolpanel.fragment.DeviceFragment;
 import com.offspring.tftcontrolpanel.fragment.DimmerFragment;
 import com.offspring.tftcontrolpanel.fragment.PresetFragment;
-import com.offspring.tftcontrolpanel.fragment.SettingFragment;
 import com.offspring.tftcontrolpanel.fragment.TimerFragment;
 
 import java.util.ArrayList;
@@ -23,14 +23,13 @@ public class TabTFTActivity extends AppCompatActivity implements View.OnClickLis
 
     PresetFragment mPresetFragment;
     DimmerFragment mDimmerFragment;
-    TimerFragment mTimerFragment;
-    SettingFragment mSettingFragment;
-    android.support.v4.app.Fragment fragments[] = new Fragment[4];
+    DeviceFragment mDeviceFragment;
+    android.support.v4.app.Fragment fragments[] = new Fragment[3];
     FragmentTransaction fragmentTransaction;
     FragmentManager fragmentManager;
     ArrayList<View> listBottomBarViews = new ArrayList<>();
 
-    View llPresetBtn,llDimmerBtn,llTimerBtn,llSettingBtn;
+    View llPresetBtn, llDimmerBtn, llSettingBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,29 +38,26 @@ public class TabTFTActivity extends AppCompatActivity implements View.OnClickLis
 
         llPresetBtn = findViewById(R.id.ll_preset_button);
         llDimmerBtn = findViewById(R.id.ll_dimmer_button);
-        llTimerBtn = findViewById(R.id.ll_timer_button);
         llSettingBtn = findViewById(R.id.ll_setting_button);
 
-        mPresetFragment = PresetFragment.newInstance("","");
-        mDimmerFragment = DimmerFragment.newInstance("","");
-        mTimerFragment = TimerFragment.newInstance("","");
-        mSettingFragment = SettingFragment.newInstance("","");
+        mPresetFragment = PresetFragment.newInstance("", "");
+        mDimmerFragment = DimmerFragment.newInstance("", "");
+        mDeviceFragment = DeviceFragment.newInstance("", "");
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         listBottomBarViews.add(llPresetBtn);
         listBottomBarViews.add(llDimmerBtn);
-        listBottomBarViews.add(llTimerBtn);
         listBottomBarViews.add(llSettingBtn);
 
-        for(int i = 0; i < listBottomBarViews.size(); i++ ) {
+        for (int i = 0; i < listBottomBarViews.size(); i++) {
             listBottomBarViews.get(i).setOnClickListener(this);
         }
 
         addTabFragment(1);
         addTabFragment(0);
 
-        changeColorIndicator(llPresetBtn,"#53caf5");
+        changeColorIndicator(llPresetBtn, "#53caf5");
 
     }
 
@@ -76,10 +72,7 @@ public class TabTFTActivity extends AppCompatActivity implements View.OnClickLis
                     fragments[1] = mDimmerFragment;
                     break;
                 case 2:
-                    fragments[2] = mTimerFragment;
-                    break;
-                case 3:
-                    fragments[3] = mSettingFragment;
+                    fragments[2] = mDeviceFragment;
                     break;
                 default:
                     break;
@@ -90,7 +83,7 @@ public class TabTFTActivity extends AppCompatActivity implements View.OnClickLis
             fragments[id].setUserVisibleHint(true);
         } else {
             fragmentTransaction = fragmentManager.beginTransaction();
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 3; i++) {
                 if (i == id) {
                     fragmentTransaction.show(fragments[i]);
                     fragments[i].setUserVisibleHint(true);
@@ -122,15 +115,12 @@ public class TabTFTActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.ll_dimmer_button:
                 addTabFragment(1);
                 break;
-            case R.id.ll_timer_button:
-                addTabFragment(2);
-                break;
             case R.id.ll_setting_button:
-                addTabFragment(3);
+                addTabFragment(2);
                 break;
         }
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             if (!listBottomBarViews.get(i).equals(view)) {
                 changeColorIndicator(listBottomBarViews.get(i), "#000000");
             } else {
