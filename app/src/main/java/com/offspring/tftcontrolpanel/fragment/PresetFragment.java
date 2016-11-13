@@ -169,34 +169,42 @@ public class PresetFragment extends Fragment implements View.OnClickListener {
         toggleButton1.setChecked(mListPreset.get(page * 8 + 0).enable);
         toggleButton1.setTextOn("Preset " + (page * 8 + 1));
         toggleButton1.setTextOff("Preset " + (page * 8 + 1));
+        toggleButton1.setText("Preset " + (page * 8 + 1));
 
         toggleButton2.setChecked(mListPreset.get(page * 8 + 1).enable);
         toggleButton2.setTextOn("Preset " + (page * 8 + 2));
         toggleButton2.setTextOff("Preset " + (page * 8 + 2));
+        toggleButton2.setText("Preset " + (page * 8 + 2));
 
         toggleButton3.setChecked(mListPreset.get(page * 8 + 2).enable);
         toggleButton3.setTextOn("Preset " + (page * 8 + 3));
         toggleButton3.setTextOff("Preset " + (page * 8 + 3));
+        toggleButton3.setText("Preset " + (page * 8 + 3));
 
         toggleButton4.setChecked(mListPreset.get(page * 8 + 3).enable);
         toggleButton4.setTextOn("Preset " + (page * 8 + 4));
         toggleButton4.setTextOff("Preset " + (page * 8 + 4));
+        toggleButton4.setText("Preset " + (page * 8 + 4));
 
         toggleButton5.setChecked(mListPreset.get(page * 8 + 4).enable);
         toggleButton5.setTextOn("Preset " + (page * 8 + 5));
         toggleButton5.setTextOff("Preset " + (page * 8 + 5));
+        toggleButton5.setText("Preset " + (page * 8 + 5));
 
         toggleButton6.setChecked(mListPreset.get(page * 8 + 5).enable);
         toggleButton6.setTextOn("Preset " + (page * 8 + 6));
         toggleButton6.setTextOff("Preset " + (page * 8 + 6));
+        toggleButton6.setText("Preset " + (page * 8 + 6));
 
         toggleButton7.setChecked(mListPreset.get(page * 8 + 6).enable);
         toggleButton7.setTextOn("Preset " + (page * 8 + 7));
         toggleButton7.setTextOff("Preset " + (page * 8 + 7));
+        toggleButton7.setText("Preset " + (page * 8 + 7));
 
         toggleButton8.setChecked(mListPreset.get(page * 8 + 7).enable);
         toggleButton8.setTextOn("Preset " + (page * 8 + 8));
         toggleButton8.setTextOff("Preset " + (page * 8 + 8));
+        toggleButton8.setText("Preset " + (page * 8 + 8));
     }
 
     /**
