@@ -7,6 +7,7 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tv_universe_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -45,6 +46,7 @@
                     android:background="@drawable/drawable_preset_btn_bg">
 
                     <TextView
+                        android:id="@+id/plus_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -56,6 +58,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/tv_value_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -67,6 +70,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/minus_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -99,6 +103,7 @@
                     android:background="@drawable/drawable_preset_btn_bg">
 
                     <TextView
+                        android:id="@+id/plus_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -110,6 +115,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/tv_value_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -121,6 +127,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/minus_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -153,6 +160,7 @@
                     android:background="@drawable/drawable_preset_btn_bg">
 
                     <TextView
+                        android:id="@+id/plus_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -164,6 +172,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/tv_value_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -175,6 +184,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/minus_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -207,6 +217,7 @@
                     android:background="@drawable/drawable_preset_btn_bg">
 
                     <TextView
+                        android:id="@+id/plus_4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -218,6 +229,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/tv_value_4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -229,6 +241,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/minus_4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -261,6 +274,7 @@
                     android:background="@drawable/drawable_preset_btn_bg">
 
                     <TextView
+                        android:id="@+id/plus_5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -272,6 +286,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/tv_value_5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -283,6 +298,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/minus_5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -315,6 +331,7 @@
                     android:background="@drawable/drawable_preset_btn_bg">
 
                     <TextView
+                        android:id="@+id/plus_6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -326,6 +343,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/tv_value_6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -337,6 +355,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/minus_6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -369,6 +388,7 @@
                     android:background="@drawable/drawable_preset_btn_bg">
 
                     <TextView
+                        android:id="@+id/plus_7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -380,6 +400,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/tv_value_7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -391,6 +412,7 @@
                         android:textSize="@dimen/_15sdp" />
 
                     <TextView
+                        android:id="@+id/minus_7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -432,6 +454,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/btn_previous_page"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -439,6 +462,7 @@
                         android:src="@drawable/left_button" />
 
                     <ImageView
+                        android:id="@+id/btn_next_page"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_15sdp"
